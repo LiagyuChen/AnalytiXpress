@@ -1,0 +1,5 @@
+2023-09-17 14:09:08 [INFO] Question: sss
+2023-09-17 14:27:04 [INFO] Question: a
+2023-09-17 14:27:04 [INFO] Running PandasAI with openai LLM...
+2023-09-17 14:27:04 [INFO] Prompt ID: cea6012c-343d-4f21-b2fc-d558ac0cc1fa
+2023-09-17 14:27:05 [INFO] error_code=invalid_api_key error_message='Incorrect API key provided: 1111111111. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False

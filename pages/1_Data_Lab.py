@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="AnalytiXpress", page_icon="./assets/logo.png")
+st.set_page_config(page_title = "AnalytiXpress", page_icon = "./assets/logo.png")
 
 st.markdown("# Data Lab")
 st.sidebar.header("Data Lab")
@@ -455,7 +455,7 @@ Update the value of df and editedDF in session_state to avoid reloading dataset
 uploaded_file = None
 if 'df' not in st.session_state or st.session_state.df.empty:
     st.session_state.df = pd.DataFrame({})
-    uploaded_file = st.file_uploader("Choose to upload a file", type=["csv", "xls", "xlsx"])
+    uploaded_file = st.file_uploader("Choose to upload a file", type = ["csv", "xls", "xlsx"])
     st.write("uploaded_file: ", uploaded_file)
     print("uploaded_file: ", uploaded_file)
 

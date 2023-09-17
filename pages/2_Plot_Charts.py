@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.set_page_config(page_title="AnalytiXpress", page_icon="./assets/logo.png")
+st.set_page_config(page_title = "AnalytiXpress", page_icon = "./assets/logo.png")
 
 st.markdown("# Data Visualization")
 st.sidebar.header("Data Visualization")
@@ -26,8 +26,10 @@ def setDiscreteChartColor(coloredColumn, colorNum, colorList, params):
         params["color"] = coloredColumn
         if colorNum != 0:
             params["color_discrete_sequence"] = colorList
+    return params
 
-def colorConfig(columns):           
+def colorConfig(columns):
+    coloredColumn, colorNum, colorType, colorList = None, None, None, None 
     coloredColumn = st.selectbox("Select column for colored group", columns)
     st.write("* Notice: You have to click the 'Render Chart' button first to active the next step color configuration!")
     if coloredColumn == "None": 
